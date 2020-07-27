@@ -25,7 +25,7 @@ final class KeyboardResponder:ObservableObject{
     
     @objc func keyBoardWillShow(notification: Notification) {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
-            currentHeight = 0.5*keyboardSize.height
+            currentHeight = 0.75*keyboardSize.height
         }
     }
     
