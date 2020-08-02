@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2214F4DE24D6F7A700C5FCCF /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2214F4DD24D6F7A700C5FCCF /* WeatherModel.swift */; };
+		2214F4E024D6F9B400C5FCCF /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2214F4DF24D6F9B400C5FCCF /* FetchData.swift */; };
+		2214F4E424D6FC9F00C5FCCF /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2214F4E324D6FC9F00C5FCCF /* ActivityIndicator.swift */; };
+		2214F4E724D7029E00C5FCCF /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 2214F4E624D7029E00C5FCCF /* URLImage */; };
 		2222D6D224CDE81100479C39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2222D6D124CDE81100479C39 /* AppDelegate.swift */; };
 		2222D6D424CDE81100479C39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2222D6D324CDE81100479C39 /* SceneDelegate.swift */; };
 		2222D6D624CDE81100479C39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2222D6D524CDE81100479C39 /* ContentView.swift */; };
@@ -19,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2214F4DD24D6F7A700C5FCCF /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		2214F4DF24D6F9B400C5FCCF /* FetchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
+		2214F4E324D6FC9F00C5FCCF /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		2222D6CE24CDE81100479C39 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2222D6D124CDE81100479C39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2222D6D324CDE81100479C39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,12 +44,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2214F4E724D7029E00C5FCCF /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2214F4DC24D6F78B00C5FCCF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2214F4DD24D6F7A700C5FCCF /* WeatherModel.swift */,
+				2214F4DF24D6F9B400C5FCCF /* FetchData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2214F4E224D6FC7800C5FCCF /* SupportingViews */ = {
+			isa = PBXGroup;
+			children = (
+				2214F4E324D6FC9F00C5FCCF /* ActivityIndicator.swift */,
+			);
+			path = SupportingViews;
+			sourceTree = "<group>";
+		};
 		2222D6C524CDE81100479C39 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +87,8 @@
 		2222D6D024CDE81100479C39 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				2214F4E224D6FC7800C5FCCF /* SupportingViews */,
+				2214F4DC24D6F78B00C5FCCF /* Model */,
 				2222D6D124CDE81100479C39 /* AppDelegate.swift */,
 				2222D6D324CDE81100479C39 /* SceneDelegate.swift */,
 				2222D6D524CDE81100479C39 /* ContentView.swift */,
@@ -100,6 +127,9 @@
 			dependencies = (
 			);
 			name = Weather;
+			packageProductDependencies = (
+				2214F4E624D7029E00C5FCCF /* URLImage */,
+			);
 			productName = Weather;
 			productReference = 2222D6CE24CDE81100479C39 /* Weather.app */;
 			productType = "com.apple.product-type.application";
@@ -128,6 +158,9 @@
 				Base,
 			);
 			mainGroup = 2222D6C524CDE81100479C39;
+			packageReferences = (
+				2214F4E524D7029E00C5FCCF /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = 2222D6CF24CDE81100479C39 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -158,8 +191,11 @@
 				2222D6D224CDE81100479C39 /* AppDelegate.swift in Sources */,
 				2222D6E824CDFA2E00479C39 /* Result.swift in Sources */,
 				2222D6E624CDF52100479C39 /* KeyboardResponder.swift in Sources */,
+				2214F4DE24D6F7A700C5FCCF /* WeatherModel.swift in Sources */,
 				2222D6D424CDE81100479C39 /* SceneDelegate.swift in Sources */,
 				2222D6D624CDE81100479C39 /* ContentView.swift in Sources */,
+				2214F4E024D6F9B400C5FCCF /* FetchData.swift in Sources */,
+				2214F4E424D6FC9F00C5FCCF /* ActivityIndicator.swift in Sources */,
 				2222D6EA24CDFDE300479C39 /* PropertyRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +390,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2214F4E524D7029E00C5FCCF /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.19;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2214F4E624D7029E00C5FCCF /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2214F4E524D7029E00C5FCCF /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2222D6C624CDE81100479C39 /* Project object */;
 }
