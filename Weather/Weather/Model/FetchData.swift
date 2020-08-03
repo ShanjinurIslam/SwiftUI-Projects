@@ -17,7 +17,7 @@ class FetchData:ObservableObject{
         
         let l:String = String(describing: location.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)
         
-        let urlString:String = "https://api.openweathermap.org/data/2.5/weather?q=\(l)&appid=067d6e3ec1ff73e774b20200caa39151&units=metric"
+        let urlString:String = "https://api.openweathermap.org/data/2.5/weather?q=\(l)&appid=&units=metric"
         
         print(urlString)
         
